@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mauiPopup:BasePopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mauiPopup="clr-namespace:MauiPopup.Views;assembly=MauiPopup"
+             x:Class="Lords_Of_Evil___Necromancer.MenuPopUp"
+             Title="MenuPopUp">
+    <HorizontalStackLayout>
+        <VerticalStackLayout >
+
+            <Label x:Name="lblMovesLeft"  Margin="0,0,0,0"/>
+            <Label Text="Current Resources"/>
+            <HorizontalStackLayout>
+                <Image Source = "Images/BonePile.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblpopBonesCollected" Margin="5,0,0,0"/>
+                <Image Source = "Images/UnderConstruction.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblpopFleshCollected" Margin="5,0,0,0"/>
+                <Image Source = "Images/Ore.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblpopOreCollected" Margin="5,0,0,0"/>
+                <Image Source = "Images/Magic.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblpopMagicCollected" Margin="5,0,0,0"/>
+
+            </HorizontalStackLayout>
+            <Label Text="Map Tile"/>
+            <HorizontalStackLayout>
+
+                <Image Source = "Images/BonePile.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblMapBonesCollected" Margin="5,0,0,0"/>
+                <Image Source = "Images/UnderConstruction.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblMapFleshCollected" Margin="5,0,0,0"/>
+                <Image Source = "Images/Ore.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblMapOreCollected" Margin="5,0,0,0"/>
+
+
+            </HorizontalStackLayout>
+            <Button x:Name="btnGraveRob" Text="Grave Rob [1]" Clicked="btnGraveRob_Clicked"/>
+            <Button x:Name="btnDisect" Text="Dissect [1]" Clicked="btnDisect_Clicked"/>
+            <Button x:Name="btnMine" Text="Mine [2]" Clicked="btnMine_Clicked"/>
+            <Button x:Name="btnMagic" Text="Build Magic [3]" Clicked="btnMagic_Clicked"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout Margin="10,0,0,0" x:Name="VSLlistView">
+            <HorizontalStackLayout HorizontalOptions="End" >
+                <Button x:Name="btnClose" Text="Close [X]" Clicked="btnClose_Clicked" CornerRadius="45" />
+            </HorizontalStackLayout>
+            <Label Text="Spells"/>
+            <ListView x:Name="LVSpells">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding name}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </VerticalStackLayout>
+    </HorizontalStackLayout>
+</mauiPopup:BasePopupPage>

@@ -1,0 +1,59 @@
+is_global = true
+build_property.TargetFramework = net6.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lords_Of_Evil___Necromancer
+build_property.ProjectDir = E:\Games And Projects\Shadows Of Brimestone\GithubCopy\Lords Of Evil - Necromancer\Lords Of Evil - Necromancer\
+
+[E:/Games And Projects/Shadows Of Brimestone/GithubCopy/Lords Of Evil - Necromancer/Lords Of Evil - Necromancer/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lords_Of_Evil___Necromancer.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/Games And Projects/Shadows Of Brimestone/GithubCopy/Lords Of Evil - Necromancer/Lords Of Evil - Necromancer/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lords_Of_Evil___Necromancer.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[E:/Games And Projects/Shadows Of Brimestone/GithubCopy/Lords Of Evil - Necromancer/Lords Of Evil - Necromancer/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lords_Of_Evil___Necromancer.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[E:/Games And Projects/Shadows Of Brimestone/GithubCopy/Lords Of Evil - Necromancer/Lords Of Evil - Necromancer/Map.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lords_Of_Evil___Necromancer.Map.xaml
+build_metadata.AdditionalFiles.TargetPath = Map.xaml
+build_metadata.AdditionalFiles.RelativePath = Map.xaml
+
+[E:/Games And Projects/Shadows Of Brimestone/GithubCopy/Lords Of Evil - Necromancer/Lords Of Evil - Necromancer/MenuPopUp.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lords_Of_Evil___Necromancer.MenuPopUp.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuPopUp.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuPopUp.xaml
+
+[E:/Games And Projects/Shadows Of Brimestone/GithubCopy/Lords Of Evil - Necromancer/Lords Of Evil - Necromancer/Resources.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lords_Of_Evil___Necromancer.Resources.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources.xaml
+
+[E:/Games And Projects/Shadows Of Brimestone/GithubCopy/Lords Of Evil - Necromancer/Lords Of Evil - Necromancer/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lords_Of_Evil___Necromancer.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/Games And Projects/Shadows Of Brimestone/GithubCopy/Lords Of Evil - Necromancer/Lords Of Evil - Necromancer/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Lords_Of_Evil___Necromancer.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

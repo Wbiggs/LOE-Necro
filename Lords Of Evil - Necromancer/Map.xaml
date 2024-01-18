@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Lords_Of_Evil___Necromancer.Map"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Map">
+    <StackLayout
+        Orientation="Horizontal"
+        >
+        <VerticalStackLayout x:Name="MenuLayout" >
+            <Grid x:Name="MovementButtons" BackgroundColor="Red">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="↑" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked_Up"/>
+                <Button Text="←" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked_Left"/>
+                <Button Text="→" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked_Right"/>
+                <Button Text="↓" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked_Down"/>
+
+                <Button Text="⊖" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked_MainButton"/>
+
+                <Button Text="↖" Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked_Up_Left"/>
+                <Button Text="↗" Grid.Row="0" Grid.Column="2" Clicked="Button_Clicked_Up_Right"/>
+                <Button Text="↙" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked_Down_Left"/>
+                <Button Text="↘" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked_Down_Right"/>
+
+
+            </Grid>
+            <HorizontalStackLayout>
+                <Label x:Name="lblRow" Margin="5"/>
+                <Label x:Name="lblCol" Margin="5"/>
+                <Label x:Name="lblTurn" Margin="10,5,5,5"/>
+            </HorizontalStackLayout>
+            <Label x:Name="lblMoves"/>
+            <HorizontalStackLayout Margin="5">
+                <Image Source = "Images/BonePile.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblBonesCollected" Margin="5,0,0,0"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Margin="5">
+                <Image Source = "Images/UnderConstruction.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblFleshCollected" Margin="5,0,0,0"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Margin="5">
+                <Image Source = "Images/Ore.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblOreCollected" Margin="5,0,0,0"/>
+            </HorizontalStackLayout>            
+            <HorizontalStackLayout Margin="5">
+                <Image Source = "Images/Magic.png" HeightRequest = "30" WidthRequest = "30" />
+                <Label x:Name="lblMagicCollected" Margin="5,0,0,0"/>
+            </HorizontalStackLayout>
+            <Label Text="Army" />
+            <ListView x:Name="LVArmy">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding name}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+        <ScrollView Orientation="Both" x:Name="MapScroll">
+            <ScrollView.Content>
+
+                <Grid x:Name="MapGrid" >
+                    <Grid.GestureRecognizers>
+                        <PanGestureRecognizer PanUpdated="OnPanUpdated"/>
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </ScrollView.Content>
+            <ScrollView.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="OnPanUpdated"/>
+            </ScrollView.GestureRecognizers>
+
+
+
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
